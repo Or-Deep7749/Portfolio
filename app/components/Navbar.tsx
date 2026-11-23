@@ -2,20 +2,18 @@ import Link from "next/link"
 
 export default function Navbar() {
   return (
-    <header className="w-full border-b border-white/10 bg-black">
-      <nav className="max-w-[900px] mx-auto px-6 py-6 flex items-center justify-between">
+    <header className="w-full border-b border-slate-800 bg-slate-900/80 backdrop-blur-md sticky top-0 z-50">
+      <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
 
-    
-        <span className="font-mono text-[13px] tracking-wide text-lime-300">
+        <span className="font-mono text-sm tracking-wide text-emerald-400 font-semibold bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">
           ph.sql
         </span>
 
-     
-        <ul className="flex gap-7 text-[13px] font-sans tracking-wide">
+        <ul className="flex gap-6 sm:gap-8 text-xs sm:text-sm font-mono tracking-wide">
           <li>
             <Link
               href="#projetos"
-              className="text-zinc-500 hover:text-zinc-200 transition-colors"
+              className="text-slate-400 hover:text-emerald-400 transition-colors"
             >
               projetos
             </Link>
@@ -24,7 +22,7 @@ export default function Navbar() {
           <li>
             <Link
               href="#skills"
-              className="text-zinc-500 hover:text-zinc-200 transition-colors"
+              className="text-slate-400 hover:text-emerald-400 transition-colors"
             >
               skills
             </Link>
@@ -33,7 +31,7 @@ export default function Navbar() {
           <li>
             <Link
               href="#experience"
-              className="text-zinc-500 hover:text-zinc-200 transition-colors"
+              className="text-slate-400 hover:text-emerald-400 transition-colors"
             >
               experiência
             </Link>
@@ -42,7 +40,7 @@ export default function Navbar() {
           <li>
             <Link
               href="#contato"
-              className="text-zinc-500 hover:text-zinc-200 transition-colors"
+              className="text-slate-400 hover:text-emerald-400 transition-colors"
             >
               contato
             </Link>
